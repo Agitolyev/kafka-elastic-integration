@@ -20,6 +20,12 @@ curl -XGET https://localhost:9200/_cat/nodes?v -u admin:admin --insecure
 curl -XGET https://localhost:9200/_cat/plugins?v -u admin:admin --insecure
 ```
 
+#### Kibana/Elastic admin creds:
+``` 
+uname: admin
+password: admin
+```
+
 ### Starting the simulation
 
 Might requier about a minute for data-generator to boot.
@@ -84,3 +90,11 @@ curl -k -u "admin:admin" -X PUT -H "Content-Type: application/json" --data @user
 ```bash
 curl -k -u "admin:admin" -X PUT -H "Content-Type: application/json" --data @user-managment/role_mapping.json https://localhost:9200/_opendistro/_security/api/rolesmapping/user9_role/ | jq
 ```
+
+#### User9 creds
+
+```
+uname: user9
+password: user9
+```
+
