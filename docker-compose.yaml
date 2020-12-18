@@ -10,6 +10,7 @@ services:
       # - discovery.seed_hosts=es02,es03
       # - cluster.initial_master_nodes=es01
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - opendistro_security.unsupported.restapi.allow_securityconfig_modification=true
     volumes:
       - /tmp/elasticsearch/data01:/usr/share/elasticsearch/data
     ports:

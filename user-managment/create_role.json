@@ -1,0 +1,22 @@
+{
+    "cluster_permissions": [],
+    "index_permissions": [
+        {
+            "index_patterns": [
+                "user_9*"
+            ],
+            "dls": "",
+            "fls": [],
+            "masked_fields": [],
+            "allowed_actions": [
+                "read"
+            ]
+        }
+    ],
+    "tenant_permissions": [
+        {
+            "tenant_patterns": [],
+            "allowed_actions": []
+        }
+    ]
+}
